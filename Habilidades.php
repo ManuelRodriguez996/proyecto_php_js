@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Manuel Rodriguez">
+    <meta name="description" content="página web CV">
+    <link rel="shortcut icon" href="http://localhost/CVMANUEL/assets/favicon/icons8-cv-80.png" type="image/x-icon">
+    <title>CV Manuel Rodriguez</title>
+
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            min-height: calc(100vh - 260px);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            transition: .5s;
+            text-decoration: none;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border: 6px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            background-color: #FFF;
+        }
+
+        td {
+            border: 2px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 2px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+            
+        }
+
+        #h2-text {
+            margin: 15px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+        <?php include("navbar.php"); ?>
+
+    <h2 id="h2-text">Habilidades</h2>
+    <hr>
+
+    <div class="container">
+        <table>
+            <colgroup>
+                <col style="background-color: bisque;">
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <th>Habilidades Técnicas</th>
+            <th>Nivel de Dominio</th>
+
+            <tr>
+                <td>HTML</td>
+                <td>Intermedio</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Intermedio</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Basico</td>
+            </tr>
+            <tr>
+                <td>Responsive Design</td>
+                <td>Basico</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>Basico</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>Basico</td>
+            </tr>
+
+
+
+
+        </table>
+    </div>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy;2023</p>
+    </footer>
+</body>
+
+</html>
